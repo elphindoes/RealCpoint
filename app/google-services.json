@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "230563373767",
+    "firebase_url": "https://cpoint-6646f.firebaseio.com",
+    "project_id": "cpoint-6646f",
+    "storage_bucket": "cpoint-6646f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230563373767:android:4ce9dc44dd3d92231614e2",
+        "android_client_info": {
+          "package_name": "npa.sit.cpoint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230563373767-3i370338hh4gmbuse7d4prf1prpjt9d4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "npa.sit.cpoint",
+            "certificate_hash": "58a521032f2f0d25e96b4e4df96b0c122a9e96c8"
+          }
+        },
+        {
+          "client_id": "230563373767-0tiq4qd9m6qrt9henq1abluhqqaacd95.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkGaZlvx54whZ4Pu9_tkWYq8Y9_pwhAzY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230563373767-0tiq4qd9m6qrt9henq1abluhqqaacd95.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
