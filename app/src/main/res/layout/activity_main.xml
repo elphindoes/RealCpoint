@@ -8,21 +8,51 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="396dp"
-        android:layout_height="154dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="96dp"
+        android:layout_width="411dp"
+        android:layout_height="293dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/firebase_auth" />
 
     <Button
         android:id="@+id/main_emailBtn"
-        android:layout_width="296dp"
-        android:layout_height="49dp"
+        android:layout_width="376dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/bt_main_email_yellow"
         android:text="Sign in with Email"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="278dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+    <Button
+        android:id="@+id/main_facebookBtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#4267b2"
+        android:text="Sign in with Facebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_emailBtn" />
+
+    <Button
+        android:id="@+id/main_googleBtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#EEEEEE"
+        android:text="Sign in with Google"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_facebookBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
