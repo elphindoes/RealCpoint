@@ -8,31 +8,35 @@
 
     <Button
         android:id="@+id/login_loginBtn"
-        android:layout_width="296dp"
-        android:layout_height="49dp"
+        android:layout_width="303dp"
+        android:layout_height="47dp"
         android:background="@drawable/bt_main_email_yellow"
         android:text="Sign in"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="374dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="442dp" />
 
     <EditText
         android:id="@+id/login_emailEditText"
-        android:layout_width="285dp"
-        android:layout_height="42dp"
+        android:layout_width="287dp"
+        android:layout_height="47dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="265dp" />
+        app:layout_constraintBottom_toTopOf="@+id/login_passwordEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/login_passwordEditText"
         android:layout_width="289dp"
-        android:layout_height="48dp"
+        android:layout_height="47dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="318dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="357dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
