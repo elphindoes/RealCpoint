@@ -72,6 +72,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/result_uidLabel" />
 
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="63dp"
+        android:layout_height="76dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/User"
+
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="317dp" />
+
+    <TextView
+        android:id="@+id/result_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="402dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
