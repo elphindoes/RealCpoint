@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+
+    <ImageView
+        android:id="@+id/update_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        android:foreground="@drawable/rounded_fg"
+        android:gravity="center_vertical"
+        android:src="@drawable/defavatar" />
+
+    <TextView
+        android:id="@+id/textViewProfile"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Update Profile"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorPrimaryDark"
+        tools:layout_editor_absoluteY="212dp" />
+
+    <EditText
+        android:id="@+id/EditTextName"
+        android:layout_width="280dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="textPersonName|textCapSentences"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="286dp" />
+
+    <EditText
+        android:id="@+id/EditTextSurname"
+        android:layout_width="280dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:hint="Enter your surname"
+        android:inputType="textPersonName|textCapSentences"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="328dp" />
+
+    <TextView
+        android:id="@+id/surnameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Surname"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="339dp" />
+
+    <EditText
+        android:id="@+id/EditTextPhone"
+        android:layout_width="280dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:hint="Enter your phone number"
+        android:inputType="textPersonName|textCapSentences"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <TextView
+        android:id="@+id/phoneNumberView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="389dp" />
+
+    <TextView
+        android:id="@+id/EmailDataView"
+        android:layout_width="282dp"
+        android:layout_height="36dp"
+        android:text="Email"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="433dp" />
+
+    <TextView
+        android:id="@+id/emailView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="440dp" />
+
+    <Button
+        android:id="@+id/btnSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="494dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
