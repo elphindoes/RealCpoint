@@ -10,12 +10,10 @@
     <ImageView
         android:id="@+id/update_imageView"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="30dp"
+        android:layout_height="183dp"
         android:foreground="@drawable/rounded_fg"
         android:gravity="center_vertical"
         android:src="@drawable/defavatar"
-        app:layout_constraintBottom_toTopOf="@+id/textViewProfile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,136 +22,116 @@
         android:id="@+id/textViewProfile"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="45dp"
+        android:layout_marginTop="30dp"
         android:gravity="center_horizontal"
-        android:text="Update Profile"
+        android:text="Display Name"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toTopOf="@+id/nameView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/update_imageView" />
-
-    <EditText
-        android:id="@+id/EditTextName"
-        android:layout_width="0dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="66dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="63dp"
-        android:ems="10"
-        android:hint="Enter your name"
-        android:inputType="textPersonName|textCapSentences"
-        app:layout_constraintBottom_toTopOf="@+id/EditTextPhone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/nameView"
-        app:layout_constraintTop_toTopOf="@+id/textViewProfile" />
-
-    <TextView
-        android:id="@+id/nameView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:layout_marginEnd="59dp"
-        android:layout_marginBottom="34dp"
-        android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/surnameView"
-        app:layout_constraintEnd_toStartOf="@+id/EditTextName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewProfile" />
-
-    <EditText
-        android:id="@+id/EditTextSurname"
-        android:layout_width="0dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="41dp"
-        android:ems="10"
-        android:hint="Enter your surname"
-        android:inputType="textPersonName|textCapSentences"
-        app:layout_constraintBottom_toBottomOf="@+id/phoneNumberView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/surnameView"
-        app:layout_constraintTop_toTopOf="@+id/nameView" />
 
     <TextView
         android:id="@+id/surnameView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="31dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="19dp"
         android:text="Surname"
-        app:layout_constraintBottom_toTopOf="@+id/phoneNumberView"
-        app:layout_constraintEnd_toStartOf="@+id/EditTextSurname"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameView" />
 
-    <EditText
-        android:id="@+id/EditTextPhone"
-        android:layout_width="0dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="75dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="75dp"
-        android:ems="10"
-        android:hint="Enter your phone number"
-        android:inputType="textPersonName|textCapSentences"
-        app:layout_constraintBottom_toTopOf="@+id/btnSaveButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/phoneNumberView"
-        app:layout_constraintTop_toBottomOf="@+id/nameView" />
-
     <TextView
-        android:id="@+id/phoneNumberView"
+        android:id="@+id/surnameView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="32dp"
-        android:text="Phone Number"
-        app:layout_constraintBottom_toTopOf="@+id/emailView"
-        app:layout_constraintEnd_toStartOf="@+id/EditTextPhone"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/surnameView" />
+        android:layout_marginTop="19dp"
+        android:text="Surname"
+        app:layout_constraintStart_toStartOf="@+id/nameView2"
+        app:layout_constraintTop_toBottomOf="@+id/nameView2" />
 
     <TextView
-        android:id="@+id/EmailDataView"
-        android:layout_width="0dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="25dp"
-        android:text="Email"
-        app:layout_constraintBottom_toTopOf="@+id/btnSaveButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/emailView"
-        app:layout_constraintTop_toBottomOf="@+id/phoneNumberView" />
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="22dp"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProfile" />
+
+    <TextView
+        android:id="@+id/nameView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="22dp"
+        android:text="Name"
+        app:layout_constraintStart_toEndOf="@+id/surnameView"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProfile" />
 
     <TextView
         android:id="@+id/emailView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="21dp"
         android:text="Email"
-        app:layout_constraintBottom_toTopOf="@+id/btnSaveButton"
-        app:layout_constraintEnd_toStartOf="@+id/EmailDataView"
+        app:layout_constraintBottom_toTopOf="@+id/statusView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/emailView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="21dp"
+        android:text="Email"
+        app:layout_constraintBottom_toTopOf="@+id/statusView2"
+        app:layout_constraintStart_toStartOf="@+id/statusView2" />
+
+    <TextView
+        android:id="@+id/statusView"
+        android:layout_width="41dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:text="Status"
+        app:layout_constraintBottom_toBottomOf="@+id/statusView2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phoneNumberView" />
+        app:layout_constraintTop_toTopOf="@+id/statusView2" />
+
+    <TextView
+        android:id="@+id/statusView2"
+        android:layout_width="41dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginBottom="141dp"
+        android:text="Status"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSaveButton"
+        app:layout_constraintStart_toStartOf="@+id/surnameView2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProfile" />
 
     <Button
         android:id="@+id/btnSaveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="189dp"
-        android:text="Button"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="29dp"
+        android:text="Change"
+        app:layout_constraintBottom_toTopOf="@+id/changeImgButton"
+        app:layout_constraintStart_toStartOf="@+id/changeImgButton" />
+
+    <Button
+        android:id="@+id/changeImgButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="126dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="112dp"
+        android:text="Change Picture"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailView" />
+        app:layout_constraintStart_toStartOf="@+id/statusView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
