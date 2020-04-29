@@ -19,7 +19,7 @@ class RegisterActivity: AppCompatActivity() {
         mAuth = FirebaseAuth.getInstance()
 
         if (mAuth!!.currentUser != null) {
-            startActivity(Intent(this@RegisterActivity, ResultActivity::class.java))
+            startActivity(Intent(this@RegisterActivity, Dashboard::class.java))
             finish()
         }
         register_registerBtn.setOnClickListener {
@@ -48,7 +48,7 @@ class RegisterActivity: AppCompatActivity() {
                 } else {
                     toast("Create account successfully!")
                     Log.d(TAG, "Create account successfully!")
-                    startActivity(Intent(this@RegisterActivity, ResultActivity::class.java))
+                    startActivity(Intent(this@RegisterActivity, Dashboard::class.java))
                     finish()
                 }
             }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResultActivity">
+    tools:context=".Dashboard">
 
     <Button
         android:id="@+id/logout_logoutBtn"
@@ -25,70 +25,27 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/firebase_auth" />
 
-    <TextView
-        android:id="@+id/result_emailLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="64dp"
-        android:fontFamily="Roboto"
-        android:text="Email: "
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_appLogo" />
-
-    <TextView
-        android:id="@+id/result_emailData"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:fontFamily="Roboto"
-        android:text="email"
-        app:layout_constraintBaseline_toBaselineOf="@+id/result_emailLabel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/result_emailLabel" />
-
-    <TextView
-        android:id="@+id/result_uidLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="Roboto"
-        android:text="UID:"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/result_emailLabel" />
-
-    <TextView
-        android:id="@+id/result_uidData"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:text="uid"
-        app:layout_constraintBaseline_toBaselineOf="@+id/result_uidLabel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/result_uidLabel" />
-
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/result_profilebtn"
         android:layout_width="63dp"
         android:layout_height="76dp"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/user"
+        android:layout_marginStart="44dp"
 
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="317dp" />
+        android:layout_marginTop="68dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_appLogo"
+        app:srcCompat="@drawable/user" />
 
     <TextView
         android:id="@+id/result_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
         android:text="Profile"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="402dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

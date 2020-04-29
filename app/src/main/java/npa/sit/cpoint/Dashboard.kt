@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_result.*
 
-class ResultActivity : AppCompatActivity(){
+class Dashboard : AppCompatActivity(){
     var mAuth : FirebaseAuth? = null
     var mAuthListener: FirebaseAuth.AuthStateListener? = null
     private val TAG: String ="Result Activity"
@@ -19,11 +19,6 @@ class ResultActivity : AppCompatActivity(){
         mAuth = FirebaseAuth.getInstance()
 
         val user = mAuth!!.currentUser
-
-        result_emailData.text = user!!.email
-        result_uidData.text = user!!.uid
-
-
 
         logout_logoutBtn.setOnClickListener{
             if(mAuth!=null){
