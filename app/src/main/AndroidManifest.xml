@@ -19,6 +19,7 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".Dashboard" />
         <activity android:name=".RegisterActivity" />
+        <activity android:name=".UpdateProfileActivity" />
     </application>
 
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>

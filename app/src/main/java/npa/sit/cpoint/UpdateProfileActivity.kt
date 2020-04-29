@@ -17,19 +17,6 @@ import kotlinx.android.synthetic.main.activity_update_profile.*
 
 class UpdateProfileActivity : AppCompatActivity(){
     var mAuth: FirebaseAuth? = null
-    private var btnSaveButton: Button? = null
-    private val TAG: String = "Update Profile"
-    private var textViewEmailName: TextView? = null
-    private var databaseReference: DatabaseReference? = null
-    private var editTextName: EditText? = null
-    private var editTextSurname: EditText? = null
-    private var editTextPhoneNo: EditText? = null
-    private var profileImageView: ImageView? = null
-    private var firebaseStorage: FirebaseStorage? = null
-    private var PICKIMAGE = 123
-    var imagePath: Uri? = null
-    private var storageReference: StorageReference? = null
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -19,12 +19,16 @@ class Dashboard : AppCompatActivity(){
         mAuth = FirebaseAuth.getInstance()
 
         val user = mAuth!!.currentUser
+        result_profilebtn.setOnClickListener{
+            startActivity(Intent(this@Dashboard,UpdateProfileActivity::class.java))
 
+        }
         logout_logoutBtn.setOnClickListener{
             if(mAuth!=null){
                 mAuth!!.signOut()
                 var intent = Intent(this,MainActivity::class.java)
                 startActivity(intent)
+                finish()
             }
         }
 
