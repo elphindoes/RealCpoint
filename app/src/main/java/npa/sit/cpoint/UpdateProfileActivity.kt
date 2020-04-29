@@ -31,12 +31,12 @@ class UpdateProfileActivity : AppCompatActivity(){
     private var editTextPhoneNo: EditText? = null
     private var profileImageView: ImageView? = null
     private var firebaseStorage: FirebaseStorage? = null
-    private var PICK_IMAGE = 123
+    private var PICKIMAGE = 123
     var imagePath: Uri? = null
     private var storageReference: StorageReference? = null
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent) {
-        if (requestCode == PICK_IMAGE && resultCode == Activity.RESULT_OK && data.data != null) {
+        if (requestCode == PICKIMAGE && resultCode == Activity.RESULT_OK && data.data != null) {
             imagePath = data.data
             try {
                 val bitmap =
@@ -72,12 +72,11 @@ class UpdateProfileActivity : AppCompatActivity(){
         textViewEmailName=findViewById(R.id.textViewProfile)
         textViewEmailName.setText(user!!.email)
         profileImageView = findViewById(R.id.update_imageView)
-        firebaseStorage = FirebaseStorage.getInstance();
-        storageReference = firebaseStorage.getReference();
+        firebaseStorage = FirebaseStorage.getInstance()
+        storageReference = firebaseStorage.getReference()
         btnSaveButton.setOnClickListener {
-            editTextName.
-        }
 
+        }
 
 
 
