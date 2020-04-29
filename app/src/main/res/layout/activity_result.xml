@@ -77,7 +77,7 @@
         android:layout_width="63dp"
         android:layout_height="76dp"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/User"
+        app:srcCompat="@drawable/user"
 
         tools:layout_editor_absoluteX="34dp"
         tools:layout_editor_absoluteY="317dp" />

@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.coroutines.NonCancellable
 
 class MainActivity : AppCompatActivity() {
     var mAuth: FirebaseAuth? = null
@@ -24,6 +25,11 @@ class MainActivity : AppCompatActivity() {
 
         main_emailBtn.setOnClickListener {
             startActivity(Intent(this@MainActivity, LoginActivity::class.java))
+        }
+
+        main_signUp.setOnClickListener {
+            startActivity(Intent(this@MainActivity, RegisterActivity::class.java))
+
         }
     }
 }

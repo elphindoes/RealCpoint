@@ -35,20 +35,6 @@ class UpdateProfileActivity : AppCompatActivity(){
     var imagePath: Uri? = null
     private var storageReference: StorageReference? = null
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent) {
-        if (requestCode == PICKIMAGE && resultCode == Activity.RESULT_OK && data.data != null) {
-            imagePath = data.data
-            try {
-                val bitmap =
-                    MediaStore.Images.Media.getBitmap(contentResolver, imagePath)
-                profileImageView!!.setImageBitmap(bitmap)
-            } catch (e: IOException) {
-                e.printStackTrace()
-            }
-        }
-        super.onActivityResult(requestCode, resultCode, data)
-    }
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -64,17 +50,7 @@ class UpdateProfileActivity : AppCompatActivity(){
 
         EmailDataView.text = user!!.email
 
-        databaseReference = FirebaseDatabase.getInstance().getReference()
-        editTextName = findViewById(R.id.EditTextName)
-        editTextSurname = findViewById(R.id.EditTextSurname)
-        editTextPhoneNo = findViewById(R.id.EditTextPhone)
-        btnSaveButton=findViewById(R.id.btnSaveButton)
-        textViewEmailName=findViewById(R.id.textViewProfile)
-        textViewEmailName.setText(user!!.email)
-        profileImageView = findViewById(R.id.update_imageView)
-        firebaseStorage = FirebaseStorage.getInstance()
-        storageReference = firebaseStorage.getReference()
-        btnSaveButton.setOnClickListener {
+
 
         }
 
@@ -82,4 +58,3 @@ class UpdateProfileActivity : AppCompatActivity(){
 
 
     }
-}
