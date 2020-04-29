@@ -7,22 +7,37 @@
     tools:context=".Dashboard">
 
     <EditText
-        android:id="@+id/register_emailEditText"
+        android:id="@+id/register_displaynameEditText"
         android:layout_width="379dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:fontFamily="Roboto"
+        android:hint="Display name"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/register_emailEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/register_emailEditText"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="287dp"
+        android:ems="10"
+        android:fontFamily="Roboto"
         android:hint="Email address"
         android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="227dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/register_passwordEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:fontFamily="Roboto"
         android:hint="Password"
@@ -30,27 +45,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/register_emailEditText" />
+
     <Button
         android:id="@+id/register_registerBtn"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="Roboto"
         android:text="Create Account"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/register_passwordEditText" />
+
     <Button
         android:id="@+id/register_signinBtn"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="Roboto"
         android:text="Sign in"
         android:textColor="#A7A7A7"
