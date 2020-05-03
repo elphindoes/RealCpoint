@@ -68,6 +68,11 @@ class RegisterActivity: AppCompatActivity() {
                         toast("Create account successfully!")
                         Log.d(TAG, "Create account successfully!")
                     }
+                    user!!.sendEmailVerification().addOnCompleteListener{ task ->
+                        if (task.isSuccessful){
+                            Log.d(TAG,"Email sent.")
+                        }
+                    }
 
                     startActivity(Intent(this@RegisterActivity, Dashboard::class.java))
                     finish()
@@ -76,6 +81,9 @@ class RegisterActivity: AppCompatActivity() {
 
         }
         register_signinBtn.setOnClickListener {
-            startActivity(Intent(this@RegisterActivity, LoginActivity::class.java)) }
+            startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
+        }
+
+
     }
 }
