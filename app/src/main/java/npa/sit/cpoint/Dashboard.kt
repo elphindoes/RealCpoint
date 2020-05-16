@@ -20,7 +20,7 @@ class Dashboard : AppCompatActivity(){
 
         val user = mAuth!!.currentUser
         result_profilebtn.setOnClickListener{
-            startActivity(Intent(this@Dashboard,UpdateProfileActivity::class.java))
+            startActivity(Intent(this@Dashboard,ProfileActivity::class.java))
 
         }
         logout_logoutBtn.setOnClickListener{

@@ -1,23 +1,15 @@
 package npa.sit.cpoint
 
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
-import com.google.firebase.storage.FirebaseStorage
-import com.google.firebase.storage.StorageReference
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_update_profile.*
 
 
-class UpdateProfileActivity : AppCompatActivity() {
+class ProfileActivity : AppCompatActivity() {
     var mAuth: FirebaseAuth? = null
     var mDatabase: FirebaseDatabase? = null
 
@@ -61,6 +53,17 @@ class UpdateProfileActivity : AppCompatActivity() {
 
         })
 
+        btnChangeButton.setOnClickListener {
+            var intent = Intent(this,ChangeProfileActivity::class.java)
+            intent.putExtra("display_name",textViewProfile.text.toString())
+            intent.putExtra("status",statusView2.text.toString())
+            intent.putExtra("name",nameView2.text.toString())
+            intent.putExtra("surname",surnameView2.text.toString())
 
+
+
+
+            startActivity(intent)
+        }
     }
 }
