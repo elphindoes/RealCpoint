@@ -9,7 +9,7 @@
 
     <ImageView
         android:id="@+id/update_imageView"
-        android:layout_width="0dp"
+        android:layout_width="411dp"
         android:layout_height="183dp"
         android:foreground="@drawable/rounded_fg"
         android:gravity="center_vertical"
@@ -20,7 +20,7 @@
 
     <TextView
         android:id="@+id/textViewProfile"
-        android:layout_width="0dp"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:gravity="center_horizontal"
@@ -36,8 +36,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="17dp"
         android:text="Surname"
+        app:layout_constraintEnd_toStartOf="@+id/surnameView2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameView" />
 
@@ -45,18 +46,20 @@
         android:id="@+id/surnameView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="19dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="18dp"
         android:text="Surname"
-        app:layout_constraintStart_toStartOf="@+id/nameView2"
+        app:layout_constraintStart_toEndOf="@+id/surnameView"
         app:layout_constraintTop_toBottomOf="@+id/nameView2" />
 
     <TextView
         android:id="@+id/nameView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="23dp"
         android:text="Name"
+        app:layout_constraintEnd_toStartOf="@+id/nameView2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewProfile" />
 
@@ -64,10 +67,10 @@
         android:id="@+id/nameView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="23dp"
         android:text="Name"
-        app:layout_constraintStart_toEndOf="@+id/surnameView"
+        app:layout_constraintStart_toEndOf="@+id/nameView"
         app:layout_constraintTop_toBottomOf="@+id/textViewProfile" />
 
     <TextView
@@ -75,63 +78,68 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="21dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="65dp"
         android:text="Email"
-        app:layout_constraintBottom_toTopOf="@+id/statusView"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/emailView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surnameView" />
 
     <TextView
         android:id="@+id/emailView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginBottom="21dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="24dp"
         android:text="Email"
-        app:layout_constraintBottom_toTopOf="@+id/statusView2"
-        app:layout_constraintStart_toStartOf="@+id/statusView2" />
+        app:layout_constraintStart_toEndOf="@+id/emailView"
+        app:layout_constraintTop_toBottomOf="@+id/surnameView2" />
 
     <TextView
         android:id="@+id/statusView"
         android:layout_width="41dp"
-        android:layout_height="0dp"
+        android:layout_height="19dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="21dp"
         android:text="Status"
-        app:layout_constraintBottom_toBottomOf="@+id/statusView2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/statusView2" />
+        app:layout_constraintTop_toBottomOf="@+id/emailView" />
 
     <TextView
         android:id="@+id/statusView2"
-        android:layout_width="41dp"
-        android:layout_height="17dp"
-        android:layout_marginTop="142dp"
-        android:layout_marginBottom="141dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="20dp"
         android:text="Status"
-        app:layout_constraintBottom_toBottomOf="@+id/btnChangeButton"
-        app:layout_constraintStart_toStartOf="@+id/surnameView2"
-        app:layout_constraintTop_toBottomOf="@+id/textViewProfile" />
+        app:layout_constraintStart_toEndOf="@+id/statusView"
+        app:layout_constraintTop_toBottomOf="@+id/emailView2" />
 
     <Button
         android:id="@+id/btnChangeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="29dp"
+        android:layout_marginStart="162dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="12dp"
         android:text="Change"
         app:layout_constraintBottom_toTopOf="@+id/changeImgButton"
-        app:layout_constraintStart_toStartOf="@+id/changeImgButton" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/changeImgButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="126dp"
+        android:layout_marginStart="146dp"
         android:layout_marginEnd="125dp"
-        android:layout_marginBottom="112dp"
+        android:layout_marginBottom="24dp"
         android:text="Change Picture"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/statusView" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

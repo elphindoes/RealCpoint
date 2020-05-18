@@ -47,6 +47,16 @@ class ChangeProfileActivity : AppCompatActivity() {
             var surname_ref = mDatabase!!.reference.child("Users").child(uid).child("surname")
             surname_ref.setValue(update_surname)
             var status_ref = mDatabase!!.reference.child("Users").child(uid).child("status")
+            status_ref.setValue(update_status).addOnCompleteListener{
+                task: Task<Void> ->
+                if(task!!.isSuccessful){
+                    toast("Change successful.")
+                    finish()
+                }
+                else{
+                    toast("Change failed.")
+                }
+            }
 
         }
     }
