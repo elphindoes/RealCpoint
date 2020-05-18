@@ -23,21 +23,19 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="264dp"
         android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bookingBtn"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/user" />
 
     <TextView
-        android:id="@+id/result_profile"
+        android:id="@+id/tv_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginTop="8dp"
         android:text="Profile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.009"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/result_profilebtn" />
 
@@ -52,6 +50,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/dental_logo" />
+
+    <ImageButton
+        android:id="@+id/bookingBtn"
+        android:layout_width="63dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="172dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@android:drawable/ic_menu_today" />
+
+    <TextView
+        android:id="@+id/tv_booking"
+        android:layout_width="57dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="88dp"
+
+        android:layout_marginTop="8dp"
+        android:text="Booking"
+        app:layout_constraintStart_toEndOf="@+id/tv_profile"
+        app:layout_constraintTop_toBottomOf="@+id/bookingBtn" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

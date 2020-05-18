@@ -10,7 +10,6 @@ import kotlinx.android.synthetic.main.activity_dashboard.*
 class Dashboard : AppCompatActivity(){
     var mAuth : FirebaseAuth? = null
     var mAuthListener: FirebaseAuth.AuthStateListener? = null
-    private val TAG: String ="Result Activity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,8 +20,11 @@ class Dashboard : AppCompatActivity(){
         val user = mAuth!!.currentUser
         result_profilebtn.setOnClickListener{
             startActivity(Intent(this@Dashboard,ProfileActivity::class.java))
-
         }
+        tv_booking.setOnClickListener{
+            startActivity(Intent(this@Dashboard,BookingActivity::class.java))
+        }
+
         logout_logoutBtn.setOnClickListener{
             if(mAuth!=null){
                 mAuth!!.signOut()
