@@ -22,7 +22,7 @@
         app:sv_doneStepLineColor="@color/colorAccent"
         app:sv_doneTextColor="@android:color/white"
         app:sv_doneStepMarkColor="@android:color/white"
-        app:sv_typeface="@font/Bellerose"
+        app:sv_typeface="@font/bellerose"
         />
 
     <androidx.viewpager.widget.ViewPager
@@ -54,7 +54,7 @@
             android:background="@drawable/bt_main_email_yellow"
             android:layout_weight="1"
             android:enabled="false"
-            android:fontFamily="@font/Bellerose"
+            android:fontFamily="@font/bellerose"
             android:text="Previous" />
 
         <Button
@@ -65,7 +65,7 @@
             android:layout_centerHorizontal="true"
             android:background="@drawable/bt_main_email_yellow"
             android:enabled="false"
-            android:fontFamily="@font/Bellerose"
+            android:fontFamily="@font/bellerose"
             android:text="์Next" />
     </LinearLayout>
 
