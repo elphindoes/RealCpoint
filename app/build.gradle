@@ -38,10 +38,18 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation "org.jetbrains.anko:anko:$anko_version"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation "androidx.appcompat:appcompat:1.1.0"
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
-    implementation 'com.shuhart.stepview:stepview:1.4.0'
+    implementation 'com.shuhart.stepview:stepview:1.5.1'
     implementation 'com.jaredrummler:material-spinner:1.3.1'
-    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation "com.ss.bannerslider:bannerslider:2.0.0"
+    implementation 'com.android.support:appcompat-v7:29.0.0'
+    implementation 'com.android.support:design:29.0.0'
+    implementation 'com.android.support:support-v4:29.0.0'
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+
 }
