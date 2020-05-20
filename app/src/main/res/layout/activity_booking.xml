@@ -62,7 +62,7 @@
             android:layout_weight="1"
             android:layout_centerHorizontal="true"
             android:background="@drawable/bt_main_email_yellow"
-            android:enabled="false"
+            android:enabled="true"
             android:text="์Next" />
     </LinearLayout>
 

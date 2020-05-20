@@ -38,6 +38,10 @@ class BookingActivity : AppCompatActivity() {
                     if(position == 0) {
                         btn_previous_step!!.isEnabled = false
                     }
+                else{
+                        btn_previous_step!!.isEnabled = true
+                    }
+
 
 
             }
