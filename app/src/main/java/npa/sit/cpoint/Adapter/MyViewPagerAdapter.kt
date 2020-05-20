@@ -11,16 +11,19 @@ import npa.sit.cpoint.Fragment.BookingStep4Fragment
 class MyViewPagerAdapter(fm: FragmentManager?) :
     FragmentPagerAdapter(fm!!) {
     override fun getItem(position: Int): Fragment {
-        when (position) {
-            0 -> return BookingStep1Fragment.getInstance()
-            1 -> return BookingStep2Fragment.getInstance()
-            2 -> return BookingStep3Fragment.getInstance()
-            3 -> return BookingStep4Fragment.getInstance()
+        when(position){
+            0 -> return BookingStep1Fragment()
+            1 -> return BookingStep2Fragment()
+            2 -> return BookingStep3Fragment()
+            3 -> return BookingStep4Fragment()
+
         }
-        return Fragment()
+        return null!!
+
     }
 
     override fun getCount(): Int {
-        return 0
+
+        return 4
     }
 }

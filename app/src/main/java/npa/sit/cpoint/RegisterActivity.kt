@@ -27,8 +27,11 @@ class RegisterActivity: AppCompatActivity() {
         }
         register_registerBtn.setOnClickListener {
             val displayName = register_displaynameEditText.text.toString().trim{it <=' '}
-            var email = register_emailEditText.text.toString().trim { it <= ' ' }
-            var password = register_passwordEditText.text.toString().trim { it <= ' ' }
+            val firstName = register_firstnameEditText.text.toString().trim{it <= ' '}
+            val surname = register_surnameEditText.text.toString().trim{it <= ' '}
+            val email = register_emailEditText.text.toString().trim { it <= ' ' }
+            val password = register_passwordEditText.text.toString().trim { it <= ' ' }
+
 
             if (email.isEmpty()) {
                 toast("Please enter your email address.")
@@ -57,8 +60,8 @@ class RegisterActivity: AppCompatActivity() {
                     userObject.put("display_name",displayName)
                     userObject.put("email",email)
                     userObject.put("password",password)
-                    userObject.put("name","Default")
-                    userObject.put("surname","Default")
+                    userObject.put("name",firstName)
+                    userObject.put("surname",surname)
                     userObject.put("status","Default")
                     userObject.put("image","Default")
                     userObject.put("thumb_img","Default")

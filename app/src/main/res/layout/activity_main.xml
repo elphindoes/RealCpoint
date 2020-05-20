@@ -11,12 +11,13 @@
         android:layout_width="230dp"
         android:layout_height="171dp"
         android:layout_marginStart="88dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="88dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/firebase_auth" />
+        app:srcCompat="@drawable/clock" />
 
     <Button
         android:id="@+id/main_emailBtn"
